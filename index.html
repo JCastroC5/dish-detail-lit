@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dish detail</title>
+    <script type="module">import './dish-detail-lit.js'</script>
+</head>
+<body>
+    <dish-detail-lit showbuttons></dish-detail-lit>
+    <script>
+        const dishDetail = document.querySelector('dish-detail-lit');
+
+        dishDetail.dish = {
+            id: 3,
+            image: 'https://www.cocinavital.mx/wp-content/uploads/2017/09/tacos-dorados-de-pollo-y-queso-crema-caseros-4-pasos-e1555367130320.jpg',
+            name: 'Tacos dorados de pollo',
+            energyValue: 120,
+            rate: 4,
+            description: 'Delicios tacos dorados de pollo de alta calidad con queso crema de primera y salsa al gusto',
+            price: 35
+        }
+
+        dishDetail.addEventListener('update-dish', e => {console.info(e.detail)});
+        dishDetail.addEventListener('delete-dish', e => {console.info(e.detail)});
+    </script>
+</body>
+</html>

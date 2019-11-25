@@ -16,12 +16,12 @@
             name: 'Tacos dorados de pollo',
             energyValue: 120,
             rate: 4,
-            description: 'Delicios tacos dorados de pollo de alta calidad con queso crema de primera y salsa al gusto',
+            description: 'Deliciosos tacos dorados de pollo de alta calidad con queso crema de primera y salsa al gusto',
             price: 35
-        }
+        };
 
-        dishDetail.addEventListener('update-dish', e => {console.info(e.detail)});
-        dishDetail.addEventListener('delete-dish', e => {console.info(e.detail)});
+        dishDetail.addEventListener('update-dish', e => {alert(JSON.stringify(e.detail))});
+        dishDetail.addEventListener('delete-dish', e => {alert(JSON.stringify(e.detail))});
     </script>
 </body>
 </html>

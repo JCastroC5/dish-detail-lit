@@ -7,7 +7,6 @@ export default css`
     
       paper-card {
         width: 400px;
-        height: 600px;
         overflow: hidden;
         margin: 0;
         border: 1px solid;
